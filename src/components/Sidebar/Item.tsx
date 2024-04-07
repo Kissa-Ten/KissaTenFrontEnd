@@ -1,11 +1,16 @@
+import { Link } from "react-router-dom";
+
 interface IItem {
-  description: string
+  description: string;
+  route: string;
 }
 
-function Item({description}: IItem) {
+function Item({ description, route }: IItem) {
   return (
     <li>
-      <span>{description}</span>
+      <Link to={route}>
+        <span>{description}</span>
+      </Link>
     </li>
   );
 }

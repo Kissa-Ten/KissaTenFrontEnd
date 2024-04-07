@@ -6,18 +6,23 @@ function Sidebar() {
   const Register = [
     {
       description: "Ingredientes",
+      route: "ingredientes",
     },
     {
       description: "Receitas",
+      route: "receitas",
     },
     {
       description: "Livros",
+      route: "livros",
     },
     {
       description: "Pedidos",
+      route: "pedidos",
     },
     {
       description: "Fornecedores",
+      route: "fornecedores",
     },
   ];
 
@@ -32,7 +37,7 @@ function Sidebar() {
           <span className={styles.info}>Cadastros</span>
           {Register.map((link, index) => (
             <React.Fragment key={index}>
-              <Item description={link.description} />
+              <Item description={link.description} route={link.route} />
             </React.Fragment>
           ))}
         </ul>

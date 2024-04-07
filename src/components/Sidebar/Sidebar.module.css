@@ -1,5 +1,5 @@
 aside {
-  position: relative;
+  position: fixed;
   width: 15vw;
   background-color: rgba(0, 0, 0, 0.007);
   padding: 1vw;

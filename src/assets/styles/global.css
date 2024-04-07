@@ -25,3 +25,10 @@ nav .logo span {
 nav .logo .dot {
   color: #f23322;
 }
+
+main {
+  margin-left: 18vw;
+}
+#app {
+  display: flex;
+}

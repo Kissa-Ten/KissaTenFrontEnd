@@ -1,7 +1,7 @@
-import "./assets/styles/global.css";
-import Sidebar from "./components/Sidebar/Sidebar";
+import { Outlet } from "react-router-dom";
+import Sidebar from "../components/Sidebar/Sidebar";
 
-function App() {
+function Layout() {
   return (
     <>
       <nav>
@@ -13,10 +13,14 @@ function App() {
           <span>Geovana Horodeski</span>
         </div>
       </nav>
-      <Sidebar />
-      <main></main>
+      <div id="app">
+        <Sidebar />
+        <main>
+          <Outlet />
+        </main>
+      </div>
     </>
   );
 }
 
-export default App;
+export default Layout;
