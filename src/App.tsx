@@ -1,4 +1,5 @@
 import "./assets/styles/global.css";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   return (
@@ -12,27 +13,7 @@ function App() {
           <span>Geovana Horodeski</span>
         </div>
       </nav>
-      <aside>
-        <div>
-          <ul>
-            <span className="info">Sistema</span>
-            <li className="active">
-              <span>Overview</span>
-            </li>
-            <hr />
-            <span className="info">Cadastros</span>
-            <li>
-              <span>Ingredientes</span>
-            </li>
-            <li>
-              <span>Receita</span>
-            </li>
-            <li>
-              <span>Fornecedor</span>
-            </li>
-          </ul>
-        </div>
-      </aside>
+      <Sidebar />
       <main></main>
     </>
   );

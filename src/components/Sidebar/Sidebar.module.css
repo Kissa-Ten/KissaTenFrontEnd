@@ -1,0 +1,54 @@
+aside {
+  position: relative;
+  width: 15vw;
+  background-color: rgba(0, 0, 0, 0.007);
+  padding: 1vw;
+  height: 89.6789vh;
+  border-right: 2px solid #f0f0f0;
+}
+
+aside div ul {
+  display: flex;
+  gap: 2vh;
+  flex-direction: column;
+  list-style: none;
+}
+
+.alert {
+  background-color: rgb(71, 156, 71);
+  height: 10vh;
+  width: 75%;
+  padding: 1vw;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  left: 6.5%;
+}
+
+.alert * {
+  color: white !important;
+}
+
+.alert button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 1vh;
+  right: 0.5vw;
+}
+
+.info {
+  font-size: 0.9em;
+  color: #535353;
+}
+
+.active {
+  background-color: rgb(71, 156, 71);
+  padding: 0.7em;
+  border-radius: 10px;
+  color: white;
+}
